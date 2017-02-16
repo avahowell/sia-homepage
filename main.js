@@ -19,7 +19,6 @@ function updatePriceEstimates(ntb) {
 	}
 }
 
-
 var input = document.getElementById('price')
 
 input.onchange = function(e) {
