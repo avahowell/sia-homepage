@@ -25,3 +25,11 @@ input.onchange = function(e) {
 	updatePriceEstimates(e.target.value)
 }
 
+document.getElementById('watchvideobutton').onclick = function() {
+	document.getElementById('watchvideomodal').className += ' is-active'
+}
+
+document.getElementById('watchvideoclose').onclick = function() {
+	var c = document.getElementById('watchvideomodal').className
+	document.getElementById('watchvideomodal').className = c.replace('is-active', '')
+}
