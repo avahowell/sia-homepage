@@ -6,7 +6,7 @@ var pricesPerTB = {
 }
 
 var downloadCostsPerTB = {
-	'sia': 5,
+	'sia': 1,
 	'amazon': 92,
 	'google': 110,
 	'microsoft': 87,
@@ -14,8 +14,8 @@ var downloadCostsPerTB = {
 
 function updatePriceEstimates(ntb) {
 	for (provider in pricesPerTB) {
-		document.getElementById(provider + '-monthlystoragecost').innerHTML = '$' + pricesPerTB[provider] * ntb
-		document.getElementById(provider + '-downloadbandwidthcost').innerHTML = '$' + downloadCostsPerTB[provider] * ntb
+		document.getElementById(provider + '-monthlystoragecost').innerHTML = '$' + (pricesPerTB[provider] * ntb).toLocaleString()
+		document.getElementById(provider + '-downloadbandwidthcost').innerHTML = '$' + (downloadCostsPerTB[provider] * ntb).toLocaleString()
 	}
 }
 
