@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -99,6 +100,10 @@
 	<section class="section calculation-section">
 		<div class="container">
 			<h1 class="title is-2 has-text-centered">Calculate your savings</h1>
+				<p class="control is-vcentered">
+					<span class="label">How many TB?</span>
+					<input id="price" class="input usage-input" type="number" min="0" placeholder="1 TB" value="1">
+				</p>
 			<table class="table">
 				<thead>
 					<tr>
@@ -113,35 +118,35 @@
 				<tbody>
 					<tr>
 						<td>Sia</td>
-						<td id="sia-monthlystoragecost">$2.00</td>
-						<td id="sia-downloadbandwidthcost">$5.00</td>
-						<td>Yes</td>
-						<td>Yes</td>
-						<td>Yes</td>
+						<td id="sia-monthlystoragecost">$2</td>
+						<td id="sia-downloadbandwidthcost">$5</td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						<td><i class="fa fa-check" aria-hidden="true"></i></td>
 					</tr>
 					<tr>
 						<td>Amazon S3</td>
-						<td id="amazon-monthlystoragecost">$23.00</td>
-						<td id="amazon-downloadbandwidthcost">$92.00</td>
-						<td>No</td>
-						<td>No</td>
-						<td>No</td>
+						<td id="amazon-monthlystoragecost">$23</td>
+						<td id="amazon-downloadbandwidthcost">$92</td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 					<tr>
 						<td>Google Cloud</td>
-						<td id="google-monthlystoragecost">$20.00</td>
-						<td id="google-downloadbandwidthcost">$110.00</td>
-						<td>No</td>
-						<td>No</td>
-						<td>No</td>
+						<td id="google-monthlystoragecost">$20</td>
+						<td id="google-downloadbandwidthcost">$110</td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 					<tr>
 						<td>Microsoft Azure</td>
-						<td id="microsoft-monthlystoragecost">$24.00</td>
-						<td id="microsoft-downloadbandwidthcost">$87.00</td>
-						<td>No</td>
-						<td>No</td>
-						<td>No</td>
+						<td id="microsoft-monthlystoragecost">$24</td>
+						<td id="microsoft-downloadbandwidthcost">$87</td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
+						<td><i class="fa fa-times" aria-hidden="true"></i></td>
 					</tr>
 				</tbody>
 			</table>
@@ -191,5 +196,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="main.js"></script>
 	</body>
 </html>
